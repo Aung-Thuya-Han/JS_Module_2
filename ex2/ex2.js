@@ -8,6 +8,8 @@ for (let i = 1; i <= numOfPlayer; i++) {
   participants.push(playerName)
 }
 
+participants.sort()
+
 for (let i = 0 ; i < participants.length; i++) {
   console.log(participants[i])
   document.getElementById("target").innerHTML += "<li>" + String(participants[i]) + "</li>"
