@@ -25,8 +25,8 @@ for (let i = 1; i <= numOfVoter; i++) {
 peopleList.sort((a,b) => b - a)
 const winner = peopleList[0]
 
-document.getElementById('winner').innerHTML = "The winner is " + peopleList[0].name + " with  " + peopleList[0].votes + " votes."
-document.getElementById('result').innerHTML = "results:" + "<br/>"
+document.getElementById('winner').innerHTML = "The winner is " + winner.name + " with  " + winner.votes + " votes."
+document.getElementById('result').innerHTML = "results:"
 for (let i = 0; i < numOfPeople; i++) {
   document.getElementById('person').innerHTML += peopleList[i].name + ": " + peopleList[i].votes + " votes" + "</br>"
 }
